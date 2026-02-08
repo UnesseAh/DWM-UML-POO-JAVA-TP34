@@ -8,29 +8,29 @@ public class GestionProduitsApp {
         ArrayList<Produit> produits = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        // Ajouter
+        // Ajouter des produits.
         produits.add(new Produit(1, "Produit1", 8000));
         produits.add(new Produit(2, "Produit2", 150));
         produits.add(new Produit(3, "Produit3", 2500));
 
-        // Supprimer
+        // Supprimer un produit par indice.
         if (produits.size() > 1) {
             produits.remove(1);
         }
 
-        // Afficher
+        // Afficher la liste des produits.
         for (Produit p : produits) {
             System.out.println(p);
         }
 
-        // Modifier
+        // Modifier un produit par indice.
         if (!produits.isEmpty()) {
             Produit p = produits.get(0);
             p.setNom("Produit-new");
             p.setPrix(8500);
         }
 
-        // Rechercher
+        // Rechercher un produit dont le nom est tapé par l’utilisateur.
         System.out.print("Entrez le nom du produit a chercher : ");
         String nomRecherche = scanner.nextLine();
         boolean trouve = false;
