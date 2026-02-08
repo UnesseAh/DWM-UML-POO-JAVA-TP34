@@ -1,3 +1,5 @@
+package Exercice1;
+
 public class Produit {
     private long id;
     private String nom;
@@ -9,14 +11,29 @@ public class Produit {
         this.prix = prix;
     }
 
-    public long getId() { return id; }
-    public void setId(long id) { this.id = id; }
+    public long getId() {
+        return id;
+    }
 
-    public String getNom() { return nom; }
-    public void setNom(String nom) { this.nom = nom; }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-    public double getPrix() { return prix; }
-    public void setPrix(double prix) { this.prix = prix; }
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
 
     @Override
     public String toString() {
